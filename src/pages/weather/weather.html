@@ -1,0 +1,21 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Weather</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-list>
+    <ion-item>
+      <ion-label stacked>City Name</ion-label>
+      <ion-input type="text" placeholder="New Delhi" [(ngModel)]="cityName"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <button ion-button block (click)="getWeather()">Get Weather</button>
+
+</ion-content>

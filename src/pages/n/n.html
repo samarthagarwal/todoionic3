@@ -1,0 +1,19 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Ionic Native</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <button ion-button block (click)="getLocation()">Get Location</button>
+  <button ion-button block (click)="takePicture()">Click</button>
+
+  <ion-card *ngIf="image">
+    <img [src]="image">
+  </ion-card>
+
+</ion-content>

@@ -1,0 +1,24 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Your Todos</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-fab right bottom>
+    <button ion-fab color="primary" (click)="createTodo()">
+      <ion-icon name="create"></ion-icon>
+    </button>
+  </ion-fab>
+
+  <ion-list>
+    <ion-item *ngFor="let todo of todos" (click)="presentOptions(todo)">
+      {{ todo.data().todo_text }}
+    </ion-item>
+  </ion-list>
+
+</ion-content>

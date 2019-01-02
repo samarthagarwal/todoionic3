@@ -1,0 +1,28 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Weather Information</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only clear (click)="close()">
+        <ion-icon name="close"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-list>
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img [src]="weather.icon">
+      </ion-thumbnail>
+      <h2> {{ weather.temperature }} °C </h2>
+      <h3> {{ weather.description }} </h3>
+      <p> Sunrise time {{ weather.sunrise }}</p>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

@@ -1,0 +1,25 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Create an Account</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-list>
+    <ion-item>
+      <ion-label stacked>Email</ion-label>
+      <ion-input type="email" placeholder="mark@facebook.com" [(ngModel)]="email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Password</ion-label>
+      <ion-input type="password" placeholder="zuckzuck" [(ngModel)]="password"></ion-input>
+    </ion-item>
+  </ion-list>
+  <button ion-button block (click)="signup()">Create Account</button>
+  <button ion-button clear block (click)="gotoLogin()">Already have an Account? Login Here</button>
+
+</ion-content>

@@ -1,14 +1,40 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="primary">
+
+    <ion-buttons start>
+      <button ion-button>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+
     <ion-title>
-      Ionic Blank
+      Zeolearn
     </ion-title>
+
+    <ion-buttons end>
+      <button ion-button (click)="showPopover($event)">
+        <ion-icon name="more"></ion-icon>
+      </button>
+    </ion-buttons>
+
   </ion-navbar>
+  <ion-toolbar color="primary">
+    <ion-searchbar></ion-searchbar>
+  </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  
+  <button ion-button block (click)="gotoOffice()">Go to Office</button>
+  
+  <button ion-button block (click)="showModal()">Show Modal</button>
+
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar color="gold">
+    <ion-title>
+      Zeolearn
+    </ion-title>
+  </ion-toolbar>
+</ion-footer>
